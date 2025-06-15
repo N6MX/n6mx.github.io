@@ -1,0 +1,29 @@
+body {
+  background-image: url('background_blue_green_square.png');
+}
+
+.float-container {
+  padding: 2%;
+  width:1200px;
+  height:400px;
+}
+
+.float-child1 {
+    width: 15%;
+    height: 90%;
+    float: left;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: rgba(153,187,255,0.6);
+    margin: 10px;
+}
+
+.float-child2 {
+    width: 60%;
+    height: 90%;
+    float: left;
+    padding: 20px;
+    border: 2px solid white;
+    background-color: rgba(153,187,255,0.6);
+    margin: 10px;
+}
