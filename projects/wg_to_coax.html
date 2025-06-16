@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>N6MX</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="../images/party_wizard.gif" class="flip-horizontal"/></a>
+      <h1><font color="white">N6MX</font></h1>
+    </div>
+
+    <div class="float-container">
+
+      <div class="content-panel">
+        <div class="green">
+          <h2><img src="../images/cutecow.gif"/><font color="white">Contents</font></h2>
+          <h3 style="font-weight: normal;"><a href="../index.html">Home</a><div></div></h3>
+          <h3 style="font-weight: normal;"><a href="../hamradio/hamradio.html">Ham Radio</a><div></div></h3>
+          <h3 style="font-weight: normal;"><a href="projects.html">Projects</a><div></div></h3>
+        </div>
+      </div>
+
+      <div class="float-child2">
+        <div class="blue">
+          <h2 align="center"><font color="white">Waveguide to Coax Adapter</font></h2>
+
+          <!--p style="font-size: 20px; color:#1F9AFE;"-->
+          <p>I read in one of W1GHZ's articles that inexpensive rectangular hobby brass can work as a waveguide and that there is some close in dimension to WR34 [1]. Another W1GHZ article gave me confidence that I didn't need to match WG sizes perfectly for it to work well [2]. I found some brass tubing on Amazon that I thought would work and tried it as an experiment to homebrew a WR42 to coax adapter for 24GHz.</p>
+          <p>These are the parts I bought:
+          <p><li>K&S 8268 Rectangular Brass Tube: <a href="https://a.co/d/6zI7vHv" target="_blank">https://a.co/d/6zI7vHv</a></p>
+          <p><li>SMA female panel mount connectors: <a href="https://a.co/d/5E0iX8O" target="_blank">https://a.co/d/5E0iX8O</a></p>
+          <p><li>I also used some double sided copper clad that I already had on hand</p>
+          <p>Using another W1GHZ article on Waveguide to Coax design [3] as a guideline, I did the following:</p>
+          <p>First, I cut about 5/8" length of tubing for the waveguide section and drilled a 5/32" hole about 3mm from one end. To make a backshort I soldered a little piece of copper clad to the tubing end with the hole. For a flange, I traced the outline of a WR42 flange and mounting holes on copper clad, cut it out with aviation snips, and then drilled the mounting holes. To make the hole for the tube, I drilled two holes in the center that were a bit smaller in diameter than the width of the tubing. I squared out the hole with a metal file, friction fit the tube into it, and soldered it together.</p>
+          <p>For the SMA connector I made an initial cut so it would fit in the tubing. The Teflon insulator friction fits into the 5/32" hole and stays put as I test it.To test and tune it, I first set up a MA/CON gunnplexer operating at 24.155GHz as my source, connected it to a commercial OmniSpectra WG/coax adapter, and measured the power on my Anritsu power meter.I used this as my reference power by hitting the dB(REL) button so that subsequent measurements will show power relative to the commercial adapter.I swapped the commercial adapter out for my homebrew adapter and read an initial measurement around -6.5dBR. With a Dremel tool and sanding drum, I incrementally shaved down the center conductor and Teflon a tenth to a fifth of a millimeter at a time and the relative power got better and better every time. At some point I shaved the conductor down twice and it didn't get any better so I assumed it peaked at +1.78dBR. I stopped at this point since it would likely only get worse if I continued. The conductor and Teflon ended up being 1.7mm long when I was done.I soldered the connector on, remeasured and still got 1.78dBR so I called it good.</p>
+          <p>I spent less than $20 in parts and can make around 6 of these which is pretty good considering how much a commercial part goes for on eBay.One other nice thing about using this brass tubing is it's a lot smaller and lighter than WR42 so it would be great for lightweight portable 24GHz rigs.</p>
+          <p>Homebrew adapter next to commerical part</p>
+          <p>References:</p>
+          <p>[1] https://www.w1ghz.org/waveguide/Waveguide_is_just_Metal.pdf</p>
+          <p>[2] https://www.w1ghz.org/waveguide/Waveguide_Matching_Plates.pdf</p>
+          <p>[3] https://www.w1ghz.org/QEX/Rectangular_Waveguide_to_Coax_Transition_Design.pdf</p>
+          <p>73,Dylon N6MX</p>
+          </p>
+        </div>
+      </div>
+      <img src="../images/saturn.gif"/>
+    </div>
+
+    <audio controls autoplay>
+      <source src="../Calm-space-ambient-track.mp3" type="audio/mpeg">
+    </audio>
+
+  </body>
+
+</html>
