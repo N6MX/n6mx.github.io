@@ -25,22 +25,25 @@
 
       <div class="float-child2">
         <div class="blue">
-          <h2 align="center"><font color="white">Waveguide to Coax Adapter</font></h2>
+          <h2 align="center"><font color="white">Homebrew 24GHz Waveguide to Coax Adapter</font></h2>
+          <h3 align="center"><font color="white">Dylon Mutz N6MX<br>June 2025</font></h3>
 
-          <!--p style="font-size: 20px; color:#1F9AFE;"-->
-          <p>I read in one of W1GHZ's articles that inexpensive rectangular hobby brass can work as a waveguide and that there is some close in dimension to WR34 [1]. Another W1GHZ article gave me confidence that I didn't need to match WG sizes perfectly for it to work well [2]. I found some brass tubing on Amazon that I thought would work and tried it as an experiment to homebrew a WR42 to coax adapter for 24GHz.</p>
-          <p>These are the parts I bought:
-          <p><li>K&S 8268 Rectangular Brass Tube: <a href="https://a.co/d/6zI7vHv" target="_blank">https://a.co/d/6zI7vHv</a></p>
-          <p><li>SMA female panel mount connectors: <a href="https://a.co/d/5E0iX8O" target="_blank">https://a.co/d/5E0iX8O</a></p>
-          <p><li>I also used some double sided copper clad that I already had on hand</p>
+          <h4>Background</h4>
+          <p>&emsp;I read in one of W1GHZ's articles that inexpensive rectangular hobby brass can work as a waveguide and that there is some close in dimension to WR34 [1]. Another W1GHZ article gave me confidence that I didn't need to match WG sizes perfectly for it to work well [2]. I found some brass tubing on Amazon that I thought would work and tried it as an experiment to homebrew a WR42 to coax adapter for 24GHz.</p>
+
+          <h4>Parts</h4>
+          <li>&emsp;K&S 8268 Rectangular Brass Tube: <a href="https://a.co/d/6zI7vHv" target="_blank">https://a.co/d/6zI7vHv</a></li>
+          <li>&emsp;SMA female panel mount connectors: <a href="https://a.co/d/5E0iX8O" target="_blank">https://a.co/d/5E0iX8O</a></li>
+          <li>&emsp;I also used some double sided copper clad that I already had on hand</li>
+
+          <h4>Construction</h4>
           <p>Using another W1GHZ article on Waveguide to Coax design [3] as a guideline, I did the following:</p>
-          <p>First, I cut about 5/8" length of tubing for the waveguide section and drilled a 5/32" hole about 3mm from one end. To make a backshort I soldered a little piece of copper clad to the tubing end with the hole. For a flange, I traced the outline of a WR42 flange and mounting holes on copper clad, cut it out with aviation snips, and then drilled the mounting holes. To make the hole for the tube, I drilled two holes in the center that were a bit smaller in diameter than the width of the tubing. I squared out the hole with a metal file, friction fit the tube into it, and soldered it together.</p>
+          <p>&emsp;First, I cut about 5/8" length of tubing for the waveguide section and drilled a 5/32" hole about 3mm from one end. To make a backshort I soldered a little piece of copper clad to the tubing end with the hole. For a flange, I traced the outline of a WR42 flange and mounting holes on copper clad, cut it out with aviation snips, and then drilled the mounting holes. To make the hole for the tube, I drilled two holes in the center that were a bit smaller in diameter than the width of the tubing. I squared out the hole with a metal file, friction fit the tube into it, and soldered it together.</p>
           <div align="center">
             <img src="../images/wg2coax__wg_view.jpg" height="200px"/>
             <img src="../images/wg2coax__flange_view.jpg" height="200px"/>
           </div>
-          <p>For the SMA connector I made an initial cut so it would fit in the tubing. The Teflon insulator friction fits into the 5/32" hole and stays put as I test it.To test and tune it, I first set up a MA/CON gunnplexer operating at 24.155GHz as my source, connected it to a commercial OmniSpectra WG/coax adapter, and measured the power on my Anritsu power meter.I used this as my reference power by hitting the dB(REL) button so that subsequent measurements will show power relative to the commercial adapter.I swapped the commercial adapter out for my homebrew adapter and read an initial measurement around -6.5dBR. With a Dremel tool and sanding drum, I incrementally shaved down the center conductor and Teflon a tenth to a fifth of a millimeter at a time and the relative power got better and better every time. At some point I shaved the conductor down twice and it didn't get any better so I assumed it peaked at +1.78dBR. I stopped at this point since it would likely only get worse if I continued. The conductor and Teflon ended up being 1.7mm long when I was done.I soldered the connector on, remeasured and still got 1.78dBR so I called it good.</p>
-          <p>I spent less than $20 in parts and can make around 6 of these which is pretty good considering how much a commercial part goes for on eBay.One other nice thing about using this brass tubing is it's a lot smaller and lighter than WR42 so it would be great for lightweight portable 24GHz rigs.</p>
+          <p>&emsp;For the SMA connector I made an initial cut so it would fit in the tubing. The Teflon insulator friction fits into the 5/32" hole and stays put as I test it.To test and tune it, I first set up a MA/CON gunnplexer operating at 24.155GHz as my source, connected it to a commercial OmniSpectra WG/coax adapter, and measured the power on my Anritsu power meter.I used this as my reference power by hitting the dB(REL) button so that subsequent measurements will show power relative to the commercial adapter.I swapped the commercial adapter out for my homebrew adapter and read an initial measurement around -6.5dBR. With a Dremel tool and sanding drum, I incrementally shaved down the center conductor and Teflon a tenth to a fifth of a millimeter at a time and the relative power got better and better every time. At some point I shaved the conductor down twice and it didn't get any better so I assumed it peaked at +1.78dBR. I stopped at this point since it would likely only get worse if I continued. The conductor and Teflon ended up being 1.7mm long when I was done.I soldered the connector on, remeasured and still got 1.78dBR so I called it good.</p>
           <div align="center">
             <img src="../images/wg2coax__sma_and_wg.jpg" height="200px"/>
             <img src="../images/wg2coax__testsetup.jpg" height="200px"/>
@@ -48,21 +51,38 @@
           </div>
           <p>Homebrew adapter next to commerical part</p>
           <img align="center" src="../images/wg2coax__homebrew_and_commercial.jpg" height="200px"/>
-          <p>References:</p>
-          <p>[1] https://www.w1ghz.org/waveguide/Waveguide_is_just_Metal.pdf</p>
-          <p>[2] https://www.w1ghz.org/waveguide/Waveguide_Matching_Plates.pdf</p>
-          <p>[3] https://www.w1ghz.org/QEX/Rectangular_Waveguide_to_Coax_Transition_Design.pdf</p>
-          <p>73,</p>
-          <p>Dylon N6MX</p>
+
+          <h4>Peer Review</h4>
+          <p>&emsp;I like to thank Doug Millar K6JEY, Kent Britian WA5VJB, and Kaha Sariashvili KM6MAP for their feedback on this write-up. Some of their feedback and comments are:</p>
+          <li>Doug and Kent both commented that the probe length sounds a bit short at 1.7mm. This is physically close to 1/8 wavelength but the expectation was closer to 1/4 wavelength. However, they agreed with the empirical approach of "Tuning for max smoke!" that was used here.</li>
+          <li>Kaha noted that the Teflon dielectric around the SMA probe will make it electrically longer, which could suggest why this probe is physically shorter than expected. Cutting the Teflon so it doesn't cover the probe before tuning may result in a longer physical probe length as Doug and Kent expect.</li>
+          <li>Kent has previously used tuning screws between the SMA probe and backshort on his homebrew adapters. The sweet spot for the screw can be found by using a magnet to slide a small ball bearing around inside the waveguide while monitoring the changes on an analyzer. Then mark the spot and drill the hole for the screw.</li>
+          <li>Kent also mentioned that a directional coupler and a good 50 ohm termination can be used to measure for lowest return loss instead of tuning for max power. I like the max power method, but would like to try the return loss method anyways for learning and experience. One issue I anticipate is the return loss measurement falling below the noise floor of my analyzer and preventing me from fine tuning past a certain point.</li>
+
+          <h4>Future Work</h4>
+          <li>The first thing I'd like to try next is trimming the Teflon down to expose the center conductor. Trimming to the inner edge of the brass tubing could mean the center conductor needs to be physically longer to tune the adapter, which could align with Doug and Kent's feedback.
+          </li>
+          <li>Depending on how the Teflon experiment goes, I may decide to do the tuning screw idea from Kent. One challenge I think may come up is getting the screw to thread and work properly with the thin walled brass.
+          </li>
+
+          <h4>Conclusions</h4>
+          <p>&emsp;With inexpensive brass tubing and SMA connectors, one can make a waveguide to coax adapter for 24GHz with performance comparable to commercial counterparts. At the time of writing, one commercial part on eBay go for about $120; parts for the homebrew adapter cost about $20 and can probably make 6 adapters. Another observation about the brass tubing is its lighter weight would be great for lightweight portable operations.</p>
+
+          <h4>References:</h4>
+          <p>
+          &emsp;[1] https://www.w1ghz.org/waveguide/Waveguide_is_just_Metal.pdf<br>
+          &emsp;[2] https://www.w1ghz.org/waveguide/Waveguide_Matching_Plates.pdf<br>
+          &emsp;[3] https://www.w1ghz.org/QEX/Rectangular_Waveguide_to_Coax_Transition_Design.pdf</p>
+          <br>
+
+          <p>Thanks for reading!<br>
+          73,<br>
+          Dylon N6MX
           </p>
         </div>
       </div>
       <img src="../images/saturn.gif"/>
     </div>
-
-    <audio controls autoplay>
-      <source src="../Calm-space-ambient-track.mp3" type="audio/mpeg">
-    </audio>
 
   </body>
 
