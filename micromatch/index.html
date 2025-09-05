@@ -25,7 +25,30 @@
     </style>
   <meta name="theme-color" content="#3498db">
 <meta name="description" content="Coordinate ham radio contacts with other operators">
-<link rel="icon" href="./favicon.ico" /></head>
+<link rel="icon" href="./favicon.ico" />
+    <style>
+      /* Ensure React Navigation back button is visible on GitHub Pages */
+      [data-testid="header-back-button"],
+      [data-testid="header-back-button"] *,
+      .react-navigation-header-back-button,
+      .react-navigation-header-back-button * {
+        color: #fff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+      }
+      /* Additional fallback for back button visibility */
+      button[aria-label*="back"],
+      button[aria-label*="Back"],
+      [role="button"][aria-label*="back"],
+      [role="button"][aria-label*="Back"] {
+        color: #fff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+      }
+    </style>
+</head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
@@ -34,6 +57,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="./expo/static/js/web/index-14d4ae073db16bf6d3807d3e734c8f68.js" defer></script>
+  <script src="./expo/static/js/web/index-8d1450f10fbd9fd104177a576d43fa70.js" defer></script>
 </body>
 </html>
