@@ -27,25 +27,87 @@
 <meta name="description" content="Coordinate ham radio contacts with other operators">
 <link rel="icon" href="./favicon.ico" />
     <style>
-      /* Ensure React Navigation back button is visible on GitHub Pages */
+      /* Comprehensive React Navigation back button visibility fixes for GitHub Pages */
+      
+      /* Target all possible React Navigation back button selectors */
       [data-testid="header-back-button"],
       [data-testid="header-back-button"] *,
       .react-navigation-header-back-button,
-      .react-navigation-header-back-button * {
+      .react-navigation-header-back-button *,
+      [class*="header-back-button"],
+      [class*="header-back-button"] *,
+      [class*="back-button"],
+      [class*="back-button"] *,
+      button[class*="back"],
+      button[class*="Back"],
+      [role="button"][class*="back"],
+      [role="button"][class*="Back"] {
+        color: #fff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+      }
+      
+      /* Target aria-label based selectors */
+      button[aria-label*="back"],
+      button[aria-label*="Back"],
+      button[aria-label*="go back"],
+      button[aria-label*="Go back"],
+      [role="button"][aria-label*="back"],
+      [role="button"][aria-label*="Back"],
+      [role="button"][aria-label*="go back"],
+      [role="button"][aria-label*="Go back"] {
+        color: #fff !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: flex !important;
+        background: transparent !important;
+        border: none !important;
+        outline: none !important;
+      }
+      
+      /* Target React Navigation header elements more broadly */
+      [class*="header"] button,
+      [class*="Header"] button,
+      [class*="header"] [role="button"],
+      [class*="Header"] [role="button"] {
         color: #fff !important;
         opacity: 1 !important;
         visibility: visible !important;
         display: flex !important;
       }
-      /* Additional fallback for back button visibility */
-      button[aria-label*="back"],
-      button[aria-label*="Back"],
-      [role="button"][aria-label*="back"],
-      [role="button"][aria-label*="Back"] {
+      
+      /* Ensure back arrow icon is visible */
+      [class*="back"] svg,
+      [class*="Back"] svg,
+      [class*="back"] path,
+      [class*="Back"] path,
+      button svg,
+      [role="button"] svg {
+        fill: #fff !important;
+        stroke: #fff !important;
         color: #fff !important;
         opacity: 1 !important;
         visibility: visible !important;
-        display: flex !important;
+        display: block !important;
+      }
+      
+      /* Fix for iOS Safari specific issues */
+      @media screen and (-webkit-min-device-pixel-ratio: 2) {
+        [class*="back"],
+        [class*="Back"],
+        button[aria-label*="back"],
+        button[aria-label*="Back"] {
+          -webkit-appearance: none !important;
+          appearance: none !important;
+          color: #fff !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          display: flex !important;
+        }
       }
     </style>
 </head>
