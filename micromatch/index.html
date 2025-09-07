@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>MicroMatch - Ham Radio Contact Coordination</title>
-    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
-    <style id="expo-reset">
-      /* These styles make the body full-height */
-      html,
-      body {
-        height: 100%;
-      }
-      /* These styles disable body scrolling if you are using <ScrollView> */
-      body {
-        overflow: hidden;
-      }
-      /* These styles make the root element full-height */
-      #root {
-        display: flex;
-        height: 100%;
-        flex: 1;
-      }
-    </style>
-  <meta name="theme-color" content="#3498db">
-<meta name="description" content="Coordinate ham radio contacts with other operators">
-<link rel="icon" href="./favicon.ico" />
-    <style>
-      /* Ensure React Navigation back button is visible on GitHub Pages */
-      [data-testid="header-back-button"],
-      [data-testid="header-back-button"] *,
-      .react-navigation-header-back-button,
-      .react-navigation-header-back-button * {
-        color: #fff !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        display: flex !important;
-      }
-      /* Additional fallback for back button visibility */
-      button[aria-label*="back"],
-      button[aria-label*="Back"],
-      [role="button"][aria-label*="back"],
-      [role="button"][aria-label*="Back"] {
-        color: #fff !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        display: flex !important;
-      }
-    </style>
-</head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>N6MX - MicroMatch</title>
+  </head>
 
-  <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="./expo/static/js/web/index-562020742a5f1442a9b282ba72076a4f.js" defer></script>
-</body>
+  <div class="header">
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <img src="../images/party_wizard.gif" class="flip-horizontal" style="margin-right: 20px;"/>
+      <h1><font color="#00ffff" style="text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;">N6MX</font></h1>
+      <img src="../images/party_wizard.gif" style="margin-left: 20px;"/>
+    </div>
+  </div>
+
+  <div class="float-container">
+    <div style="font-size: 12px; color: #666; margin: 10px 0; padding: 5px; background-color: rgba(255,255,255,0.1); border: 1px solid #ccc;">
+      <strong>You are here:</strong> <a href="../index.html">Home</a> > MicroMatch
+    </div>
+
+    <div class="content-panel">
+      <div class="green">
+        <body>
+        <h2><img src="../images/cutecow.gif"/><font color="white">Contents</font></h2>
+        <ul style="list-style-type: none; padding-left: 0;">
+          <li><h3 style="font-weight: normal; margin: 5px 0;"><a href="../index.html">Home</a></h3></li>
+          <li><h3 style="font-weight: normal; margin: 5px 0;"><a href="../hamradio/hamradio.html">Ham Radio</a></h3></li>
+          <li><h3 style="font-weight: normal; margin: 5px 0;"><a href="../projects/projects.html">Projects</a></h3></li>
+          <li><h3 style="font-weight: normal; margin: 5px 0;"><a href="index.html">MicroMatch</a></h3></li>
+        </ul>
+        </body>
+      </div>
+    </div>
+
+    <div class="float-child2">
+      <div class="blue">
+        <body>
+        <h2 align="center"><font color="white">MicroMatch</font></h2>
+        </body>
+
+        <h3>Ham Radio Contact Coordination App</h3>
+        <p><font color="white">MicroMatch is a React Native Web and Mobile application designed to help amateur radio operators plan and coordinate microwave contacts. Built with modern web technologies while maintaining a focus on functionality and ease of use.</font></p>
+        
+        <h3>Features</h3>
+        <ul style="color: white;">
+          <li>Contact coordination and scheduling</li>
+          <li>Radio operator management</li>
+          <li>Cross-platform compatibility (web, mobile)</li>
+          <li>Real-time updates and notifications</li>
+          <li>Simple, intuitive interface</li>
+        </ul>
+
+        <h3>Technical Details</h3>
+        <p><font color="white">Built using React Native Web with Expo, MicroMatch provides a seamless experience across different platforms. The app uses modern web standards while maintaining compatibility with older browsers.</font></p>
+
+        <h3>Try the App</h3>
+        <p style="font-size: 20px; color:#1F9AFE;">
+          <a href="app/index.html" target="_blank">Launch MicroMatch Web Application</a>
+        </p>
+
+        <p><font color="white">Click the link above to access the full MicroMatch web application. The app runs entirely in your web browser and doesn't require any additional software installation.</font></p>
+
+        <p><font color="white"><strong>Coming Soon:</strong> The Android app version will be available on the Google Play Store soon for mobile users!</font></p>
+
+        <h3>Screenshots</h3>
+        <div class="maincol" style="width:625px">
+            <a href="../images/micromatch/MicroMatch_Home.jpg" target="_blank">
+                <img src="../images/micromatch/MicroMatch_Home.jpg" alt="Home Screen" width="180px" style="margin-right: 10px;"/>
+            </a>
+            <a href="../images/micromatch/MicroMatch_Operators.jpg" target="_blank">
+                <img src="../images/micromatch/MicroMatch_Operators.jpg" alt="Operators View" width="180px" style="margin-right: 10px;"/>
+            </a>
+            <a href="../images/micromatch/MicroMatch_PathProfile.jpg" target="_blank">
+                <img src="../images/micromatch/MicroMatch_PathProfile.jpg" alt="Path Profile" width="180px" style="margin-right: 10px;"/>
+            </a>
+        </div>
+
+        <h3>Development</h3>
+        <p><font color="white">This application was developed as part of my ongoing projects in amateur radio and web development. It combines my interests in radio communications with modern software development practices.</font></p>
+
+        <p style="font-size: 20px; color:#1F9AFE;">
+          <a href="../projects/projects.html">Back to Projects</a>
+        </p>
+      </div>
+    </div>
+    <img src="../images/saturn.gif"/>
+  </div>
+
 </html>
